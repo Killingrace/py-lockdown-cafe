@@ -3,7 +3,7 @@ from app.errors import (VaccineError,
                         NotWearingMaskError)
 
 
-def go_to_cafe(friends: list, cafe: Cafe) -> str:
+def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:
     masks_to_buy = 0
     try:
         for friend in friends:
